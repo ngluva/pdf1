@@ -1,0 +1,1015 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  <title>Joe Bloggs</title>
+
+
+   <style>
+      ul.leaders {
+        max-width: 40em;
+        padding: 0;
+        overflow-x: hidden;
+        list-style: none
+      }
+      ul.leaders li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content:
+          ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . "
+      }
+      ul.leaders span:first-child {
+          padding-right: 0.33em;
+          background: white
+      }
+      ul.leaders span + span {
+          float: right;
+          padding-left: 0.33em;
+          background: white
+      }
+    </style>
+
+  <style type="text/css">
+  
+   .reportimage{
+    width:56mm;
+    height:56mm;  
+/*     width: 230px; 
+    height: 230px;  */
+    display: inline-block; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .image_readings{
+    border-right: #ccc 1px solid;
+    border-bottom: #ccc 1px solid; 
+    text-align: center"
+  }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Muli", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      background-color: #181b1e;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+
+  <script>
+  window.onLoadimagescrowd = function() {
+    libimagescrowd.insertTableOfContents({selectors: ['h1','h2']});
+  }
+</script>
+
+  <div style="page-break-before:always"></div>
+  
+  <table style="width: 100%" border-style="solid" class="main" cellpadding="0" cellspacing="0">
+    <tr>
+      <td></td>
+      <td style="width: 900px">
+        <table class="container" border-style="solid" style="width: 100%;background-color: #fff; border: none" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding: 15px; background-color: #e66719;">
+              <table class="header" border-style="solid" style="width: 100%; color: #fff;" cellpadding="0" cellspacing="0">
+                <tr>
+                  <!-- style="background-image:url(images/termite-img-01.jpg);" -->
+                  <td style="width: 25%"><img src="images/termite-logo.png" alt="Termite"></td>
+                  <td style="text-align: center; width: 50%">
+                    <h1>TERMITE REPORT</h1>
+
+                     
+                    <form  action='#' method='post'>
+                    <p class='{{ pdfcrowd_remove }}'>
+                    <label style="font-size: 8px;" for='id_remove_convert_button'>Remove convert buttons from PDF:</label>
+                    <input type='checkbox' checked name='remove_convert_button' id='id_remove_convert_button' {{ remove_buttons }}>
+                    <!-- style="opacity:0" -->
+                    </p>
+                    <!-- <input  type="hidden" name="noname" value="malcolm andrews"> -->
+                    <input type='submit' value='Convert to PDF and open' name='asInline'>
+                    </form>
+                    
+                  </td>
+                  <td width="25%">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="border-top: #f5843e 1px solid; padding: 15px 0 5px 0">
+                    <p style="color: #eee; margin: 0">
+                      <span>Invoice Number: <strong style="color: #ffffff">XXXXX</strong></span>
+                      <span style="padding: 0 5px; color: #f59154"> | </span>
+                      <span>Technician: <strong style="color: #ffffff">Name of Technician</strong></span>
+                      <span style="padding: 0 5px; color: #f59154"> | </span>
+                      <span>Report Generated on: <strong style="color: #ffffff">11/05/2018</strong></span>
+                      <span style="padding: 0 5px; color: #f59154"> | </span>
+                      <span>Task Completed on: <strong style="color: #ffffff">11/05/2018</strong></span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Customer Details</h2>
+              <p>Client Type: <strong>Type of Client</strong></p>
+              <p>Business Name: <strong>Name of Business</strong></p>
+              <p>Branch Name: <strong>Branch Name</strong></p>
+              <br>
+
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Customer Details</h3>
+              <table style="width: 100%; color: #fff;margin: 0 0 30px 0" border-style="solid" cellpadding="0" cellspacing="15">
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">First Name</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">Joe</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Last Name</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">Bloggs</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Mobile Number</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">0418714508</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Direct Number/Email Address</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">mandrews@results-services.com</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Building/Property Name</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Detail</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Location Information</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Name </span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Suburb</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">kottakkal</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Post Code</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">676503</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">State</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">Kerala</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Country</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">India</p>
+                  </td>
+                </tr>
+              </table>
+
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Inspection Address</h3>
+              <table style="width: 100%; color: #fff;margin: 0 0 30px 0" border-style="solid" cellpadding="0" cellspacing="15">
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Detail</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Location Information</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Name</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Suburb</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Post Code</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">State </span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Country</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; width: 50%"></td>
+                </tr>
+              </table>
+
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Postal Address</h3>
+              <table style="width: 100%; color: #fff;margin: 0 0 30px 0" border-style="solid" cellpadding="0" cellspacing="15">
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Detail</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Location Information</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Street Name</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Suburb</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Post Code</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">State </span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Country</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxx</p>
+                  </td>
+                  <td style="padding: 5px; width: 50%"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <div style="page-break-before:always"></div>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Termite History</h2>
+              <p>Termite history: <strong>yes</strong></p>
+              <p>Age of structure: <strong>xxxxxxxxx</strong></p>
+              <p>Termite history comments: <strong>xxxxxxxxx</strong></p>
+              <p>Images:</p>
+              <p>
+
+                
+              <span class="reportImage" style="background-image:url(images/termite-img-01.jpg);"></span>
+              <span class="reportImage" style="background-image:url(images/termite-img-02.jpg);"></span>
+              <span class="reportImage" style="background-image:url(images/termite-img-04.jpg);"></span>
+              </p>
+            
+
+
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Previous Treatments</h2>
+              <p>Treatment Date: <strong>xxxxxx</strong></p>
+              <p>Meter box label present: <strong>xxxxxxxxx</strong></p>
+              <p>Meter box photos:</p>
+              <p>
+                <span class="reportImage" style="background-image:url(images/termite-img-01.jpg);"></span>
+                <span class="reportImage" style="background-image:url(images/termite-img-02.jpg);"></span>
+                <span class="reportImage" style="background-image:url(images/termite-img-04.jpg);"></span>
+              </p>
+              <br>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Type of treatment protection</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Termimesh</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Graintegard</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Other</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Kordon</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Home Guard</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+              </table>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Chemical Treatment Zone</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Chemical Treatment ( part A)</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Perimiter Chemical Treatment (part B)</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Grid slab drill</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Horizontal Chemical treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Reticulation System</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid">Other</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+              </table>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Treatment Kinds</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Both physical and chemical treated zone</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+              </table>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Termite Baiting And Monitoring System</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Above Ground</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Inground</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+              </table>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Previous Chemical Termicides Used</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Organochlorins: Heptachlor Dieldrin</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Organophosphorous: Chlorpyrifos Diazinon Dursban</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Synthetic Pyrethroids: Bifenthrin Biflex</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Transfer Poison: Termidor Premise</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Arsenic Trioxide Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Other</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+              </table>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Management Zone</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Active termites treated but no management system</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">No termite management system</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+              </table>
+              
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Previous Treatments Photo</h3>
+              <p>
+                <span style="width: 140px; height: 140px; display: inline-block; background-image: url(images/termite-img-01.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover"></span>
+                <span style="width: 140px; height: 140px; display: inline-block; background-image: url(images/termite-img-02.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover"></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Property Description</h2>
+              <p>Property Type Of Structure: <strong>xxxxxx</strong></p>
+              <p>Property Levels: <strong>xxxxxxxxx</strong></p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Property External Construction</h3>
+              <p style="padding-left: 15px">Concrete Block, Stone, Coated Metal Sheeting</p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Property Foundations</h3>
+              <p style="padding-left: 15px">Brick Footings, Concrete Posts, Steel Piers, Stone</p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Roofing Type</h3>
+              <p style="padding-left: 15px">Asbestos, Iron</p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Flooring Type</h3>
+              <p style="padding-left: 15px">Wood / Tongue And Groove</p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Flooring Covering</h3>
+              <p style="padding-left: 15px">Carpet</p>
+              <br>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Areas Inspected</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 300px; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Exterior</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Internal</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Roof Void</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Site</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Subfloor</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+              </table>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Property photos</h3>
+              <p>
+                <!-- <span class="reportimage" style="background-image: url(images/proprty-1.jpg);"></span> -->
+                <span class="reportimage"> <img src="images/proprty-1.jpg"></span>
+                <span class="reportimage" style="background-image: url(images/proprty-2.jpg);"></span>
+                <span class="reportimage" style="background-image: url(images/proprty-3.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Measurements</h2>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none">
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">External treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Partial Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Subfloor treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Sub-floor flooding (less than 400mm)</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid">-</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Internal Slab Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">In-fill Structure Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Termite Bait System</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Reticulation Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Horizontal Pre- Slab Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 70%">Preconstruction Treatment</td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid"><img src="images/tick.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: #ccc 1px solid; width: 70%" colspan="2">
+                    <h4 style="margin: 0 0 5px 0; padding: 0">Measurements photos</h4>
+                    <img src="images/termite-measurement.jpg" alt="" width="250px">
+                    <img src="images/termite-measurement2.png" alt="" width="250px">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Inspection</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Areas Inspected</h3>
+              <p style="padding-left: 15px">Weather conditions at the time of inspection: <strong>Dry</strong></p>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Weather conditions comments:</h4>
+              <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Weather conditions photos:</h4>
+              <p style="padding-left: 15px">
+                 <img src="images/whether.jpg" alt="" width="250px">
+                 <img src="images/termite-measurement2.png" alt="" width="250px">
+              </p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Fence Line</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 500px; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none; margin-left: 15px">
+                  <tr>
+                    <th style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 50%;background-color: #f2f2f2">Fenceline Activity</th>
+                    <th style="text-align: center;border-bottom: #ccc 1px solid; background-color: #f2f2f2">Fence Line Type</th>
+                  </tr>
+                  <tr>
+                    <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 50%; text-align: center">Active Termite working found</td>
+                    <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: center">Timber</td>
+                  </tr>
+                </table>
+                <p style="padding-left: 15px; color: #929292">Note: Ensure that there is at least 50mm gap between soil and the wooden batterns/paling</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Fence Line Comments:</h3>
+                <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsa, reprehenderit voluptatum eaque, rem cupiditate aut quisquam fugit nobis vero cum eligendi aspernatur, incidunt molestiae, accusamus similique accusantium totam sequi.</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Fence Line Photo</h3>
+                <p>
+                <span class="reportimage" style="background-image: url(images/proprty-1.jpg);"></span>
+                <span class="reportimage" style="background-image: url(images/proprty-2.jpg);"></span>
+                <span class="reportimage" style="background-image: url(images/proprty-3.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+         <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Garden</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Garden Activity:</h3>
+              <p style="padding-left: 10px">Active termite working found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Remove loose timbers and debris</li>
+                <li>Drill and insert temp probe to tree(s) to test for termite activity</li>
+                <li>Remove bark and black plastic that is against house footings</li>
+                <li>Check irrigation systems for leaks and ensure that water does not pool against footings</li>
+                <li>Inadequate drainage in garden allowing pooling of moisture</li>
+                <li>Water feature/pond too close to structure</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Garden comments:</h4>
+              <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">GardenPhoto</h3>
+                <p>
+                <span class="reportimage" style="background-image: url(images/proprty-1.jpg);"></span>
+              </p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Attachments and Other Structures</h3>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 500px; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none; margin-left: 15px">
+                  <tr>
+                    <th style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 50%;background-color: #f2f2f2">Attachments activity</th>
+                    <th style="text-align: center;border-bottom: #ccc 1px solid; background-color: #f2f2f2">Attachments Types</th>
+                  </tr>
+                  <tr>
+                    <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 50%; text-align: center">Active Termite working found</td>
+                    <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: center">Deck, Steps, Service Conduits</td>
+                  </tr>
+                </table>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+                <ul>
+                  <li>Attachment areas not provided with correct termite barrier or cannot be easily inspected. There should be at least 25mm gap between main structure and attachment</li>
+                  <li>Where separation is not possible, more frequent inspections should be conducted</li>
+                  <li>Others</li>
+                </ul>
+                <h4 style="padding-left: 15px; margin: 0 0 5px 0">Attachment comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Attachment Photo</h3>
+                  <p>
+                  <span class="remportimage" style="background-image: url(images/proprty-1.jpg);"></span>
+                </p>
+           </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Perimeter</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Garden Activity:</h3>
+              <p style="padding-left: 10px">Active termite working found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Concrete slab edge not continuously exposed. Ensure there is at least 75mm vertical gap from the soil to the slab edge</li>
+                <li>Weep hole covered. Ensure 75mm clearance from soil to bottom of weep hole</li>
+                <li>Ensure that there is a 50mm gap between solid and structure timbers</li>
+                <li>Remove garden away from house perimeter to improve visual inspection and ensure plant roots do not penetrate perimeter chemical barrier.</li>
+                <li>Connect storm water pipe to drainage system</li>
+                <li>Hot water unit outlet pipe to be drained away from perimeter ( connect a hose and place outlet away from perimeter )</li>
+                <li>Air conditioner outlet pipe to be drained away from perimeter ( connect a hose and place outlet away from perimeter )</li>
+                <li>Garage door frame in contact with soil or over a gap in the slab</li>
+                <li>Other</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Perimeter comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Perimeter Photo</h3>
+                  <p>
+                  <span class="reportimage" style="background-image:url(images/proprty-1.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Slab Edge</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Slab Activity:</h3>
+              <p style="padding-left: 10px">Active termite working found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Slab edge inspection zone does not fully comply due to:</li>
+                <li>Concrete slab edge not continuously exposed. Ensure there is at least 75mm vertical gap from the soil to the slab edge</li>
+                <li>Soil covers the slab edge</li>
+                <li>Paths cover the slab edge</li>
+                <li>Stored goods covers the slab edge</li>
+                <li>Garden Shed covers the slab edge</li>
+                <li>Water Tank covers the slab edge</li>
+                <li>Vegetation Covers the slab edge</li>
+                <li>Other</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Slab comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Slab Photo</h3>
+                  <p>
+                  <span class="reportimage" style="background-image: url(images/proprty-3.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Weep Holes</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Weep Holes Activity:</h3>
+              <p style="padding-left: 10px">Active termite working found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Patio or deck covers the weep holes</li>
+                <li>Build up soil covers the weep holes</li>
+                <li>Paths cover the slab edge</li>
+                <li>Stored goods covers the weep holes</li>
+                <li>Garden Shed covers the weep holes</li>
+                <li>Water Tank covers the weep holes</li>
+                <li>Vegetation Covers the weep holes</li>
+                <li>Please arrange to have the weep holes cleared</li>
+                <li>Other</li>
+                <li></li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Weep Holes comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Weep Holes Photo</h3>
+                  <p>
+                  <span class="reportimage" style="background-image: url(images/proprty-2.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Subfloor</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Subfloor Activity:</h3>
+              <p style="padding-left: 10px">Active termite working found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Renew ant caps</li>
+                <li>Inadequate drainage, need to drain excess moisture</li>
+                <li>Remove loose timbers and debris from under house</li>
+                <li>Provide access to concealed sub floor area for visual inspection</li>
+                <li>Clearance less than 400mm, which necessitates a horizontal chemical soil treatment</li>
+                <li>Inadequate ventilation</li>
+                <li>Others</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Subfloor comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Subfloor Photo</h3>
+                  <p>
+                  <span class="reoprtimage" style="background-image: url(images/proprty-1.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Termite Shields</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Termite Shields Condition:</h3>
+              <p style="padding-left: 10px">Adequate</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Termite Shields Rusted out.</li>
+                <li>Termite Shields Damaged.</li>
+                <li>Termite Shields covered or build over</li>
+                <li>Other</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Termite shields comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Termite shields Photo</h3>
+                  <p>
+                  <span class="reportimage" style="background-image: url(images/proprty-3.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Ventilation</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Ventilation Condition:</h3>
+              <p style="padding-left: 10px">Adequate</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Inadequate ventilation in sub floor; need to arrange installing fans/ blower or install vents in external walls of subfloor.</li>
+                <li>Sub floor appears to have water pooling at times</li>
+                <li>Dampness appears to to creating mold and wood fungi in sub floor</li>
+                <li>Inadequate ventilation in roof void; need to arrange installing fans or vents in ceiling</li>
+                <li>Other</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Ventilation comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Ventilation Photo</h3>
+                  <p>
+                  <span class="reportimage" style="background-image: url(images/proprty-1.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Internal exposed timbers</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Timbers Activity:</h3>
+              <p style="padding-left: 10px">No termite workings found</p>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+              <ul>
+                <li>Door frames</li>
+                <li>Skirting boards</li>
+                <li>Window frames</li>
+                <li>Install wall vent to gain visual access</li>
+                <li>Steel door frames</li>
+                <li>Aluminium window frames</li>
+                <li>Gyprock wall lining</li>
+                <li>Other</li>
+              </ul>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Timbers comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                 <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Timbers Photo</h3>
+                  <p>
+                  <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Roof Void</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Roof void activity:</h3>
+              <p style="padding-left: 10px">No termite workings found</p>
+              <h4 style="padding-left: 15px; margin: 0 0 5px 0">Roof void insulation type:</h4>
+               <p style="padding-left: 15px">Foil, Glasswool</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+                <ul>
+                  <li>No access to roof void, install manhole</li>
+                  <li>Roof pitch too low for access</li>
+                  <li>Roof void filled with insulation which significantly impedes visual inspection of roof timbers</li>
+                  <li>Other</li>
+                </ul>
+                <h4 style="padding-left: 15px; margin: 0 0 5px 0">Roof void comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+               <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Roof void Photo</h3>
+               <p>
+                <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Wood Rot</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Wood Rot Findings:</h3>
+              <p style="padding-left: 10px">At the time of the inspection, visible evidence of wood decay fungi (rot)found:  <strong>Yes</strong></p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Checklist</h3>
+                <ul>
+                  <li>Wood rot found in fences</li>
+                  <li>Wood rot found in sub floor</li>
+                  <li>Wood rot found in battens</li>
+                  <li>Wood rot found in patio and or carport</li>
+                  <li>Wood rot found in sheds</li>
+                  <li>Wood rot found in deck timbers</li>
+                  <li>Wood rot found in structural timbers</li>
+                  <li>Other</li>
+                </ul>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Structural Risk</h3>
+                <p style="padding-left: 10px">When activity or damage is reported above, does it presence represent a major safety hazard?: <strong>Very low safety risk</strong></p>
+                <h4 style="padding-left: 15px; margin: 0 0 5px 0">Wood rot comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+               <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Wood rot Photo</h3>
+               <p>
+                <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Borers Damage</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Borers Activity:</h3>
+              <p style="padding-left: 10px">At the time of inspection, visible evidence of Borer damage was found</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Borers Species</h3>
+                <ul>
+                  <li>Furniture Beetle (Anobium punctaturm)</li>
+                  <li>Power Post Beetle (Lyctus brunneus)</li>
+                  <li>Qld Pine Beetle (Calymmanderus incisus)</li>
+                  <li>Uncommon Type</li>
+                </ul>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Structural Risk</h3>
+                <p style="padding-left: 10px">When activity or damage is reported above, does it presence represent a major safety hazard?:</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Degree of Risk:</h3>
+                <p style="padding-left: 10px">Low safety risk</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Borer Location:</h3>
+                <ul>
+                  <li>Borer workings found in flooring timbers</li>
+                  <li>Borer workings found in roofing timbers</li>
+                  <li>Borer workings found in footing posts</li>
+                  <li>Borer workings found in architraves timbers</li>
+                  <li>Borer workings found in decking timbers</li>
+                  <li>Others</li>
+                </ul>
+                <h4 style="padding-left: 15px; margin: 0 0 5px 0">Borer comments:</h4>
+                 <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+               <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Borer Photo</h3>
+               <p>
+                <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Thermal & Termatrac Readings </h2>
+              <table border-style="solid" cellpadding="10" cellspacing="0" style="width: 100%; border: #ccc 1px solid; margin: 15px 0 20px 0; border-bottom: none;">
+                <tr>
+                  <th style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; width: 25%;background-color: #f2f2f2">Image Readings</th>
+                  <th style="text-align: center;border-bottom: #ccc 1px solid; background-color: #f2f2f2; width: 75%;">comments</th>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; text-align: center">
+                    <img src="images/proprty-1.jpg" alt="" width="150">
+                  </td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, impedit praesentium dolor pariatur. Minima temporibus corporis accusantium vel beatae consequatur a, repellat enim rerum ex magnam illum aliquid error vero!</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; text-align: center">
+                    <img src="images/proprty-1.jpg" alt="" width="150">
+                  </td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, impedit praesentium dolor pariatur. Minima temporibus corporis accusantium vel beatae consequatur a, repellat enim rerum ex magnam illum aliquid error vero!</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; text-align: center">
+                    <img src="images/proprty-1.jpg" alt="" width="150">
+                  </td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, impedit praesentium dolor pariatur. Minima temporibus corporis accusantium vel beatae consequatur a, repellat enim rerum ex magnam illum aliquid error vero!</td>
+                </tr>
+                <tr>
+                  <td style="border-right: #ccc 1px solid; border-bottom: #ccc 1px solid; text-align: center">
+                    <img src="images/proprty-1.jpg" alt="" width="150">
+                  </td>
+                  <td style="text-align: center;border-bottom: #ccc 1px solid;text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, impedit praesentium dolor pariatur. Minima temporibus corporis accusantium vel beatae consequatur a, repellat enim rerum ex magnam illum aliquid error vero!</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Moisture Readings</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Moisture Registered in these areas</h3>
+              <table style="width: 100%; color: #fff;margin: 0 0 30px 0" border-style="solid" cellpadding="0" cellspacing="15">
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Wall</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Roof Void</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Floor</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Door Frame</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Window Frame</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Shower Area</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Toilet</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture in Garage</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture Other 1</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 50%">
+                    <span style="font-size: 12px; color: #929292">Moisture Other 1</span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 100%" colspan="2">
+                    <span style="font-size: 12px; color: #929292">Comment </span>
+                    <p style="margin: 0; padding: 5px 0; color: #000; font-weight: bold">xxxxxx</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; border-bottom: #e2e2e2 1px solid; width: 100%" colspan="2">
+                    <span style="font-size: 12px; color: #929292">Moisture photo</span>
+                    <p>
+                      <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 15px">
+              <h2 style="margin: 10px 0 20px 0; padding: 8px 15px;color: #000000; background-color: #ffe7d8; text-align: center">Access Needed</h2>
+              <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Areas Unable To Be Inspected / Access Required:</h3>
+                <ul>
+                  <li>Items stored in stairwell impeded visual inspection</li>
+                  <li>Furniture against internal walls impeded visual inspection</li>
+                  <li>Limited or no access to roof void.</li>
+                  <li>Limited or no access to subfloor area</li>
+                  <li>Stored items impeded visual inspection in subfloor area</li>
+                  <li>Retaining walls / Fences due to stored goods or vegetation</li>
+                  <li>Items stored in carport or garage impeded visual inspection</li>
+                </ul>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Recommend gaining entry to these closed areas with invasive inspection</h3>
+                <ul>
+                  <li>Stair Void</li>
+                  <li>Wall Void</li>
+                  <li>Patio Void</li>
+                  <li>Floor Void</li>
+                  <li>Bath Void</li>
+                  <li>Sub-floor Void</li>
+                  <li>Shower Void</li>
+                  <li>Other</li>
+                </ul>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Access Needed Comment</h3>
+                <p style="padding-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero fugit dolor beatae nam perspiciatis, numquam eligendi sed, minima ipsum sit animi officia vero quaerat veritatis rerum cum aut modi.</p>
+                <h3 style="padding-left: 10px; border-left: #f5843e 4px solid;margin: 0 0 10px 0">Access Needed Photo</h3>
+               <p>
+                <span class="reportimage"  style="background-image: url(images/proprty-1.jpg);"></span>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+  </ul>
+</body>
+
+</html>

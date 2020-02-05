@@ -1,0 +1,19 @@
+{
+  "name": "pdfcrowd-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app_remove.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^3.1.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.17.1",
+    "express-nunjucks": "^2.2.3",
+    "nunjucks": "^3.2.0",
+    "pdfcrowd": "^4.3.5"
+  }
+}
